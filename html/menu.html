@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/circles.css" />
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.webp" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.webp" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.webp" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/51e67d1216.js" crossorigin="anonymous" defer></script>
+    <script src="/scripts/title.js" defer></script>
+    <script src="/scripts/modal.js" defer></script>
+    <script src="/scripts/sidenav.js" defer></script>
+    <title>Switch UI</title>
+</head>
+
+<body>
+    <div class="modal-bg">
+        <div class="modal">
+            <div class="slideshow">
+                <div class="close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="slides">
+                    <div class="slide first fade">
+                        <img src="../img/Metroid/CoverArt.avif" alt="">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../img/Metroid/Metroid1.webp" alt="">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../img/Metroid/Metroid2.webp" alt="">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../img/Metroid/Metroid3.webp" alt="">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../img/Metroid/Metroid4.webp" alt="">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../img/Metroid/Metroid5.webp" alt="">
+                    </div>
+                </div>
+                <div class="arrows">
+                    <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+                    <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <br>
+
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+            <div class="game-content">
+                <div class="game-info">
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.68 59.53" width="40" height="60"
+                            role="img" title="Teen">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_2" data-name="Layer 2">
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <path class="cls-1" d="M39.69 0H0v59.53h39.69V0z"></path>
+                                    <path d="M39.11.64v58.25H.58V.64h38.53"></path>
+                                    <path class="cls-1"
+                                        d="M2.52 2.71H36.9v9.66H2.52zM2.5 14.47h34.4v35.51H2.5zm.01 42.32v-4.72h6.9v1.11H5.28v.67h3.5v1.1h-3.5v.74h4.29v1.1H2.51zm12.93-3.34a.52.52 0 00-.4-.32 2.53 2.53 0 00-.72-.09c-.61 0-.88.1-.88.28 0 .69 4.87.26 4.87 2 0 1.09-1.64 1.63-4 1.63s-3.7-.73-3.75-1.58h2.65a.69.69 0 00.46.37 2.52 2.52 0 00.79.12c.69 0 1.16-.12 1.16-.35 0-.71-4.88-.22-4.88-2 0-1 1.56-1.5 3.67-1.5 2.35 0 3.43.66 3.63 1.49zm7.02.67h1.09c.86 0 1.32-.13 1.32-.45s-.47-.49-1.11-.49h-1.3zm0 1v1.64h-2.77v-4.69h4c2.82 0 3.75.44 3.75 1.35 0 .55-.44 1-1.43 1.16.9.18 1.44.29 1.44 1.24 0 .61 0 .83.29.83v.14h-2.81a1.85 1.85 0 01-.14-.83c0-.61-.19-.81-1.48-.81zm9.45-1.94V54h1.16c.55 0 1-.15 1-.42s-.54-.37-1.13-.37zm0 1.64v.87h1.21c.69 0 1.21-.08 1.21-.43s-.65-.44-1.53-.44zm-2.77 2v-4.75h4c1.9 0 3.42.26 3.42 1.19 0 .49-.57.84-1.1 1 .91.13 1.4.57 1.4 1.08 0 1.05-1.44 1.42-3.64 1.42z">
+                                    </path>
+                                    <path
+                                        d="M5.37 23.09l26.61-6.64 2.05 7.1-8.55 2.13 5.73 19.92-9.51 2.38-5.74-19.93-8.55 2.13-2.04-7.09zM28.82 4.8h2.26l2.62 2.99-.09-1.25V4.8h2.31v5.47h-2.26l-2.62-2.98.04 1.29.05 1.69h-2.31V4.8zm-8.14 0h5.99v1.27h-3.58v.79h3.03v1.27h-3.03v.86h3.73v1.28h-6.14V4.8zm-8.42 0h5.99v1.27h-3.59v.79h3.04v1.27h-3.04v.86h3.73v1.28h-6.13V4.8zm-8.79 0h6.74v1.43H8.05v4.04H5.63V6.23H3.47V4.8z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <p>Animated Blood, Fantasy Violence
+                        </p>
+                    </div>
+                    <div class="release">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve" width="28"
+                            role="presentation" alt="" data-testid="CalendarIcon" size="28" color="currentColor">
+                            <path fill="currentColor"
+                                d="M21.8 19.1h5.6c.5 0 .9-.4.9-.9v-5.6c0-.5-.4-.9-.9-.9h-5.6c-.5 0-.9.4-.9.9v5.6c0 .5.4.9.9.9zm0 8.6h5.6c.5 0 .9-.4.9-.9v-5.6c0-.5-.4-.9-.9-.9h-5.6c-.5 0-.9.4-.9.9v5.6c0 .5.4.9.9.9zm1.6-20.3h1.5c.5 0 .9-.4.9-.9v-5c0-.5-.4-.9-.9-.9h-1.5c-.5 0-.9.4-.9.9v5c0 .5.4.9.9.9zm-16.3 0h1.5c.5 0 .9-.4.9-.9v-5c0-.5-.4-.9-.9-.9H7.1c-.5 0-.9.4-.9.9v5c0 .5.4.9.9.9zm6.1 20.3h5.6c.5 0 .9-.4.9-.9v-5.6c0-.5-.4-.9-.9-.9h-5.6c-.5 0-.9.4-.9.9v5.6c0 .5.4.9.9.9z">
+                            </path>
+                            <path fill="currentColor"
+                                d="M29.5 4.3H27v2.2c0 1.2-.9 2.1-2.1 2.1h-1.5c-1.2 0-2.1-1-2.1-2.1V4.3H10.7v2.2c0 1.2-.9 2.1-2.1 2.1H7.1C5.9 8.6 5 7.6 5 6.5V4.3H2.5C1.1 4.3 0 5.4 0 6.7V29c0 1.4 1.1 2.5 2.5 2.5h27c1.4 0 2.5-1.1 2.5-2.5V6.7c0-1.3-1.1-2.4-2.5-2.4zm0 24.7h-27V10.4h27V29z">
+                            </path>
+                            <path fill="currentColor"
+                                d="M13.2 19.1h5.6c.5 0 .9-.4.9-.9v-5.6c0-.5-.4-.9-.9-.9h-5.6c-.5 0-.9.4-.9.9v5.6c0 .5.4.9.9.9zm-8.6 8.6h5.6c.5 0 .9-.4.9-.9v-5.6c0-.5-.4-.9-.9-.9H4.6c-.5 0-.9.4-.9.9v5.6c0 .5.4.9.9.9zm0-8.6h5.6c.5 0 .9-.4.9-.9v-5.6c0-.5-.4-.9-.9-.9H4.6c-.5 0-.9.4-.9.9v5.6c0 .5.4.9.9.9z">
+                            </path>
+                        </svg>
+                        <strong>Release Date:</strong>
+                        <br>
+                        <p>October 8, 2021</p>
+                    </div>
+                    <div class="player-nmb">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve" width="28"
+                            role="presentation" alt="" data-testid="GroupIcon" size="28" color="currentColor">
+                            <path fill="currentColor"
+                                d="M9 13c0 3.8 3.1 6.9 6.9 6.9 3.8 0 6.9-3.1 6.9-6.9 0-3.8-3.1-6.9-6.9-6.9C12.1 6.1 9 9.2 9 13z">
+                            </path>
+                            <path fill="currentColor"
+                                d="M24.3 13c0 .7-.1 1.4-.3 2h.3c3.2 0 5.8-2.6 5.8-5.9 0-3.3-2.6-5.9-5.8-5.9-1.8 0-3.5.9-4.5 2.3 2.7 1.4 4.5 4.2 4.5 7.5zM7.4 15h.3c-.2-.6-.3-1.3-.3-2 0-3.3 1.8-6.1 4.5-7.5-1.1-1.4-2.7-2.3-4.5-2.3-3.2 0-5.8 2.6-5.8 5.9 0 3.3 2.6 5.9 5.8 5.9zm5.1 5.7c-1.8-.8-3.2-2.2-4.1-3.9-.3 0-.6-.1-1-.1C3.3 16.8 0 19.6 0 23h8.2c1.2-1 2.6-1.8 4.3-2.3zm11.8-3.9c-.3 0-.7 0-1 .1-.9 1.7-2.3 3.1-4.1 3.9 1.6.5 3.1 1.3 4.2 2.3h8.2c.2-3.5-3.2-6.3-7.3-6.3zm-8.4 5.1c-4.8 0-8.7 3-9 6.7h18c-.4-3.8-4.3-6.7-9-6.7z">
+                            </path>
+                        </svg>
+                        <strong>No. of players:</strong>
+                        <br>
+                        <p>Single Player</p>
+                    </div>
+                    <div class="game-size">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve" width="28"
+                            role="presentation" alt="" data-testid="StorageIcon" size="28" color="currentColor">
+                            <ellipse cx="16" cy="4.234" rx="13" ry="4.234" fill-rule="evenodd" clip-rule="evenodd"
+                                fill="currentColor"></ellipse>
+                            <path fill="currentColor"
+                                d="M3 15.71v5.293c0 .408.239.781.616.935C7.085 23.35 11.362 24.192 16 24.192s8.915-.84 12.384-2.254c.377-.154.616-.527.616-.935V15.71c-3.573 1.57-8.084 2.515-13 2.515S6.573 17.28 3 15.71z">
+                            </path>
+                            <path fill="currentColor"
+                                d="M3 7.852v5.292c0 .408.239.782.616.935 3.469 1.414 7.746 2.254 12.384 2.254s8.915-.84 12.384-2.254c.377-.153.616-.527.616-.935V7.852c-3.573 1.57-8.084 2.514-13 2.514S6.573 9.422 3 7.852zm26 15.767c-3.573 1.57-8.084 2.514-13 2.514S6.573 25.19 3 23.62v4.147C3 30.104 8.82 32 16 32s13-1.896 13-4.234">
+                            </path>
+                        </svg>
+                        <strong>Game File size:</strong>
+                        <p>4.3 GB</p>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>
+                        Upon investigating a mysterious transmission on Planet ZDR, Samus faces a mysterious foe
+                        that
+                        traps
+                        her in this dangerous world. The remote planet has been overrun by vicious alien lifeforms
+                        and
+                        murderous robots called E.M.M.I. Hunt or be hunted as you make your way through a labyrinth
+                        of
+                        enemies in Samus’ most intense side-scrolling adventure yet.
+                    </p>
+                    <br>
+                    <strong>Samus is more agile and capable than ever</strong>
+                    <br>
+                    <br>
+                    <p>Guide Samus Aran, an intergalactic bounty hunter raised by an ancient tribe, and traverse the
+                        many environments of a dangerous world. Parkour over obstacles, slide through tight spaces,
+                        counter enemies, and battle your way through the planet. Through her countless missions,
+                        Samus
+                        has never experienced a threat like the dread of ZDR.</p>
+                    <br>
+                    <strong>Power up and find more ways to explore and secrets to uncover</strong>
+                    <br>
+                    <br>
+                    <p>
+                        Gain abilities and return to previous areas to find new areas and hidden upgrades in classic
+                        Metroid™ gameplay. Planet ZDR’s sprawling map is home to many secrets to discover and powers
+                        to
+                        find. You’ll need to be prepared to evade and destroy E.M.M.I. robots and overcome the dread
+                        plaguing ZDR.
+                    </p>
+                    <br>
+                    <strong>New modes let you ease into ZDR, experience true dread, or take on a boss
+                        gauntlet</strong>
+                    <br>
+                    <br>
+                    <p>If this is your first time sprinting and shooting as Samus, the new Rookie Mode increases
+                        health
+                        gained from items and decreases damage from bosses. Bounty Hunters looking for a true
+                        challenge
+                        can face the new Dread Mode, which can be unlocked if the Hard Mode is finished. Complete
+                        the
+                        game to unlock Boss Rush* and fight Samus’ most formidable foes one-after-another to try to
+                        get
+                        the best time possible!</p>
+                    <div>
+                        <button class="store-btn"><span>Go to the Nintendo E-Shop!</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-bg">
+        <div class="modal">
+            <div class="slideshow">
+                <div class="close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="slides">
+                    <div class="slide first fade">
+                        <img src="../img/Pokemon/CoverArt.avif" alt="">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../img/Pokemon/Pokemon1.webp" alt="">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../img/Pokemon/Pokemon2.webp" alt="">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../img/Pokemon/Pokemon3.webp" alt="">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../img/Pokemon/Pokemon4.webp" alt="">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../img/Pokemon/Pokemon5.webp" alt="">
+                    </div>
+                </div>
+                <div class="arrows">
+                    <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+                    <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <br>
+
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+            <div class="game-content">
+                <div class="game-info">
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.68 59.53" width="30" height="50"
+                            role="img" title="Everyone">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_2" data-name="Layer 2">
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <path class="cls-1" d="M39.69 0H0v59.53h39.69V0z"></path>
+                                    <path d="M39.11.64v58.25H.58V.64h38.53"></path>
+                                    <path class="cls-1"
+                                        d="M2.52 2.71H36.9v9.66H2.52zM2.5 14.47h34.4v35.51H2.5zm.01 42.32v-4.71h6.9v1.1H5.28v.67h3.5v1.1h-3.5v.74h4.29v1.1H2.51zm12.93-3.34a.52.52 0 00-.4-.32 2.53 2.53 0 00-.72-.09c-.61 0-.88.1-.88.28 0 .69 4.87.26 4.87 2 0 1.09-1.64 1.63-4 1.63s-3.7-.73-3.75-1.58h2.65a.69.69 0 00.46.37 2.52 2.52 0 00.79.12c.69 0 1.16-.12 1.16-.35 0-.71-4.88-.22-4.88-2 0-1 1.56-1.5 3.67-1.5 2.35 0 3.43.66 3.63 1.49zm7.02.67h1.09c.86 0 1.32-.12 1.32-.45s-.47-.49-1.11-.49h-1.3zm0 1v1.64h-2.77v-4.68h4c2.82 0 3.75.43 3.75 1.34 0 .55-.44 1-1.43 1.16.9.18 1.44.29 1.44 1.24 0 .61 0 .83.29.83v.14h-2.81a1.83 1.83 0 01-.14-.82c0-.62-.19-.82-1.48-.82zm9.45-1.94V54h1.16c.55 0 1-.14 1-.41s-.54-.38-1.13-.38zm0 1.64v.87h1.21c.69 0 1.21-.08 1.21-.43s-.65-.44-1.53-.44zm-2.77 2v-4.74h4c1.9 0 3.42.25 3.42 1.18 0 .49-.57.84-1.1 1 .91.13 1.4.57 1.4 1.08 0 1.05-1.44 1.42-3.64 1.42z">
+                                    </path>
+                                    <path
+                                        d="M5.07 22.68l20.82-6.22 2.08 6.6-10.42 3.11.85 2.7 9.63-2.88 2.09 6.6-9.63 2.87.9 2.84 10.77-3.22 2.08 6.59-21.15 6.32-8.02-25.31m-1.6-12.41V4.8h2.95v.85H4.6V7h1.68v.84H4.6v1.6h1.88v.84zM6.78 4.8H8l.83 4 .94-4h1.12l-1.45 5.47H8.11zm4.6 5.47V4.8h2.95v.85h-1.82V7h1.68v.84h-1.68v1.6h1.88v.84zm4.85 0H15.1V4.8h2.09a1.16 1.16 0 01.92.37 1.5 1.5 0 01.34 1.07 1.64 1.64 0 01-.22.88 1.09 1.09 0 01-.78.46h.26a.87.87 0 01.32.13.89.89 0 01.28.32 1.17 1.17 0 01.12.58v.85c0 .17 0 .32.05.46a1 1 0 00.06.29h-1.09a1.31 1.31 0 01-.11-.52v-.94a.89.89 0 00-.08-.38.47.47 0 00-.26-.26.92.92 0 00-.49-.1h-.29zm0-3.1h.5a.51.51 0 00.27-.08.47.47 0 00.18-.19.8.8 0 00.09-.26 1.41 1.41 0 000-.28.8.8 0 00-.15-.55.57.57 0 00-.43-.16h-.5zm3.94 1.21L18.75 4.8H20l.81 2.31.86-2.31h1.15L21.3 8.38v1.89h-1.13zm4.98 1.98a2.06 2.06 0 01-1.08-.23 1.42 1.42 0 01-.55-.64 2.38 2.38 0 01-.2-.91v-2a2.38 2.38 0 01.2-.91 1.39 1.39 0 01.55-.67 2.55 2.55 0 012.16 0 1.39 1.39 0 01.55.63 2.59 2.59 0 01.2.91v2a2.59 2.59 0 01-.2.91 1.42 1.42 0 01-.55.64 2.06 2.06 0 01-1.08.27zm0-.81a.56.56 0 00.38-.12.79.79 0 00.22-.36 3 3 0 00.1-.63V6.63a3 3 0 00-.1-.62.79.79 0 00-.22-.36.66.66 0 00-.76 0 .72.72 0 00-.22.36 3 3 0 00-.1.62v1.81a3 3 0 00.1.63.72.72 0 00.22.36.56.56 0 00.38.12zm2.77.72V4.8h1.53l1.43 3.79V4.8H32v5.47h-1.53l-1.47-4v4zm4.99 0V4.8h3v.85H34V7h1.67v.84H34v1.6h1.88v.84z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <p>Mild Fantasy Violence
+                        </p>
+                    </div>
+                    <div class="release">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve" width="28"
+                            role="presentation" alt="" data-testid="CalendarIcon" size="28" color="currentColor">
+                            <path fill="currentColor"
+                                d="M21.8 19.1h5.6c.5 0 .9-.4.9-.9v-5.6c0-.5-.4-.9-.9-.9h-5.6c-.5 0-.9.4-.9.9v5.6c0 .5.4.9.9.9zm0 8.6h5.6c.5 0 .9-.4.9-.9v-5.6c0-.5-.4-.9-.9-.9h-5.6c-.5 0-.9.4-.9.9v5.6c0 .5.4.9.9.9zm1.6-20.3h1.5c.5 0 .9-.4.9-.9v-5c0-.5-.4-.9-.9-.9h-1.5c-.5 0-.9.4-.9.9v5c0 .5.4.9.9.9zm-16.3 0h1.5c.5 0 .9-.4.9-.9v-5c0-.5-.4-.9-.9-.9H7.1c-.5 0-.9.4-.9.9v5c0 .5.4.9.9.9zm6.1 20.3h5.6c.5 0 .9-.4.9-.9v-5.6c0-.5-.4-.9-.9-.9h-5.6c-.5 0-.9.4-.9.9v5.6c0 .5.4.9.9.9z">
+                            </path>
+                            <path fill="currentColor"
+                                d="M29.5 4.3H27v2.2c0 1.2-.9 2.1-2.1 2.1h-1.5c-1.2 0-2.1-1-2.1-2.1V4.3H10.7v2.2c0 1.2-.9 2.1-2.1 2.1H7.1C5.9 8.6 5 7.6 5 6.5V4.3H2.5C1.1 4.3 0 5.4 0 6.7V29c0 1.4 1.1 2.5 2.5 2.5h27c1.4 0 2.5-1.1 2.5-2.5V6.7c0-1.3-1.1-2.4-2.5-2.4zm0 24.7h-27V10.4h27V29z">
+                            </path>
+                            <path fill="currentColor"
+                                d="M13.2 19.1h5.6c.5 0 .9-.4.9-.9v-5.6c0-.5-.4-.9-.9-.9h-5.6c-.5 0-.9.4-.9.9v5.6c0 .5.4.9.9.9zm-8.6 8.6h5.6c.5 0 .9-.4.9-.9v-5.6c0-.5-.4-.9-.9-.9H4.6c-.5 0-.9.4-.9.9v5.6c0 .5.4.9.9.9zm0-8.6h5.6c.5 0 .9-.4.9-.9v-5.6c0-.5-.4-.9-.9-.9H4.6c-.5 0-.9.4-.9.9v5.6c0 .5.4.9.9.9z">
+                            </path>
+                        </svg>
+                        <strong>Release Date:</strong>
+                        <br>
+                        <p>January 28, 2022</p>
+                    </div>
+                    <div class="player-nmb">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve" width="28"
+                            role="presentation" alt="" data-testid="GroupIcon" size="28" color="currentColor">
+                            <path fill="currentColor"
+                                d="M9 13c0 3.8 3.1 6.9 6.9 6.9 3.8 0 6.9-3.1 6.9-6.9 0-3.8-3.1-6.9-6.9-6.9C12.1 6.1 9 9.2 9 13z">
+                            </path>
+                            <path fill="currentColor"
+                                d="M24.3 13c0 .7-.1 1.4-.3 2h.3c3.2 0 5.8-2.6 5.8-5.9 0-3.3-2.6-5.9-5.8-5.9-1.8 0-3.5.9-4.5 2.3 2.7 1.4 4.5 4.2 4.5 7.5zM7.4 15h.3c-.2-.6-.3-1.3-.3-2 0-3.3 1.8-6.1 4.5-7.5-1.1-1.4-2.7-2.3-4.5-2.3-3.2 0-5.8 2.6-5.8 5.9 0 3.3 2.6 5.9 5.8 5.9zm5.1 5.7c-1.8-.8-3.2-2.2-4.1-3.9-.3 0-.6-.1-1-.1C3.3 16.8 0 19.6 0 23h8.2c1.2-1 2.6-1.8 4.3-2.3zm11.8-3.9c-.3 0-.7 0-1 .1-.9 1.7-2.3 3.1-4.1 3.9 1.6.5 3.1 1.3 4.2 2.3h8.2c.2-3.5-3.2-6.3-7.3-6.3zm-8.4 5.1c-4.8 0-8.7 3-9 6.7h18c-.4-3.8-4.3-6.7-9-6.7z">
+                            </path>
+                        </svg>
+                        <strong>No. of players:</strong>
+                        <br>
+                        <p>Single Player or Online</p>
+                    </div>
+                    <div class="game-size">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve" width="28"
+                            role="presentation" alt="" data-testid="StorageIcon" size="28" color="currentColor">
+                            <ellipse cx="16" cy="4.234" rx="13" ry="4.234" fill-rule="evenodd" clip-rule="evenodd"
+                                fill="currentColor"></ellipse>
+                            <path fill="currentColor"
+                                d="M3 15.71v5.293c0 .408.239.781.616.935C7.085 23.35 11.362 24.192 16 24.192s8.915-.84 12.384-2.254c.377-.154.616-.527.616-.935V15.71c-3.573 1.57-8.084 2.515-13 2.515S6.573 17.28 3 15.71z">
+                            </path>
+                            <path fill="currentColor"
+                                d="M3 7.852v5.292c0 .408.239.782.616.935 3.469 1.414 7.746 2.254 12.384 2.254s8.915-.84 12.384-2.254c.377-.153.616-.527.616-.935V7.852c-3.573 1.57-8.084 2.514-13 2.514S6.573 9.422 3 7.852zm26 15.767c-3.573 1.57-8.084 2.514-13 2.514S6.573 25.19 3 23.62v4.147C3 30.104 8.82 32 16 32s13-1.896 13-4.234">
+                            </path>
+                        </svg>
+                        <strong>Game File size:</strong>
+                        <p>6.1 GB</p>
+                    </div>
+                </div>
+                <div class="description">
+                    <strong>Discover the Hisui region, Jubilife Village, and the characters of Pokémon Legends:
+                        Arceus.</strong>
+                    <br>
+                    <br>
+                    <p>Your adventure is set in the expansive natural majesty of the Hisui region, in an age long ago
+                        when it was rare for people and Pokémon to live in close harmony. In time, this land of Hisui
+                        will come to be called Sinnoh—a region you may know well.
+                        <br>
+                        <br>
+                        Mount Coronet rises from the center of the Hisui region, surrounded on all sides by areas with
+                        distinct environments. Each area is rich in its own natural features and plays host to different
+                        Pokémon ecosystems. One such area is the Obsidian Fieldlands, which is resplendent with gorgeous
+                        flowers and verdant vegetation—what’s more, it appears to teem with Pokémon that favor meadows
+                        and forests.</p>
+                    <br>
+                    <strong>Arceus, the Alpha Pokémon, Is Said to Have Shaped All There Is in This World</strong>
+                    <br>
+                    <br>
+                    <p>
+                        During your adventure, you will explore and survey the Hisui region and become more involved
+                        with the leaders of the Diamond and Pearl Clans—eventually finding yourself drawn into the
+                        mysteries surrounding Arceus, whose secrets may be uncovered atop Mount Coronet.
+                    </p>
+                    <div>
+                        <button class="store-btn"><span>Go to the Nintendo E-Shop!</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <div class="circle"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+            <div class="circle5"></div>
+            <div class="circle6"></div>
+            <div class="circle7"></div>
+            <div class="circle8"></div>
+            <div class="circle9"></div>
+        </div>
+        <div class="showcase-content">
+            <div class="controller-container">
+                <svg width="200" height="200" preserveAspectRatio="xMidYMid meet" version="1.0">
+                    <g id="svg_1" fill="rgba(255,255,255,1)" transform="translate(0, 225) scale(0.1, -0.1)">
+                        <path id="svg_2"
+                            d="m430,1687c-30,-7 -79,-25 -108,-41c-45,-23 -61,-40 -109,-114c-31,-48 -67,-109 -79,-137c-49,-109 -95,-400 -110,-701c-9,-184 16,-263 109,-337c30,-25 49,-31 95,-34c94,-7 145,39 201,180c48,121 67,153 98,166c21,8 154,11 490,9c429,-3 462,-4 481,-21c11,-10 39,-64 62,-120c51,-126 78,-168 124,-197c105,-64 247,18 288,165c13,51 4,332 -17,505c-19,156 -57,326 -88,393c-14,29 -55,89 -91,135c-52,64 -81,89 -125,111c-67,35 -148,51 -246,51c-64,0 -77,-3 -113,-30l-42,-30l-261,0l-260,0l-36,28c-32,24 -46,27 -122,29c-47,1 -111,-3 -141,-10zm1136,-120c100,-22 136,-39 183,-87c51,-53 74,-102 105,-225c49,-195 89,-641 66,-733c-21,-84 -91,-152 -158,-152c-54,0 -96,49 -146,171c-53,130 -68,153 -111,173c-30,15 -90,16 -517,14c-465,-3 -484,-4 -510,-23c-26,-19 -71,-105 -103,-194c-32,-92 -81,-141 -142,-141c-64,0 -133,73 -152,161c-22,97 17,525 65,719c32,128 53,171 113,233c36,38 60,52 111,68c109,33 198,37 670,34c366,-2 469,-5 526,-18z" />
+                        <path id="svg_3"
+                            d="m1500,1470c-37,-37 -21,-94 33,-113c24,-9 63,11 76,39c29,65 -58,125 -109,74z" />
+                        <path id="svg_6"
+                            d="m345,1416c-147,-89 -75,-310 96,-294c92,9 156,86 146,176c-13,117 -141,179 -242,118zm130,-42c33,-15 65,-64 65,-99c0,-25 -27,-72 -52,-89c-12,-9 -40,-16 -61,-16c-54,0 -107,52 -107,105c0,47 14,71 53,95c39,24 59,25 102,4z" />
+                        <path id="svg_7"
+                            d="m1331,1324c-24,-31 -25,-35 -10,-67c30,-65 129,-46 129,25c0,64 -80,92 -119,42z" />
+                        <path id="svg_8"
+                            d="m1660,1330c-37,-37 -21,-94 33,-113c40,-15 95,40 80,80c-19,54 -76,70 -113,33z" />
+                        <path id="svg_11"
+                            d="m1491,1184c-24,-31 -25,-35 -10,-67c23,-50 93,-55 118,-8c40,74 -56,140 -108,75z" />
+                        <path id="svg_12"
+                            d="m1200,1138c-65,-34 -85,-67 -85,-141c0,-49 5,-69 23,-95c70,-97 226,-84 277,24c22,46 16,124 -12,162c-23,32 -97,72 -133,72c-14,0 -46,-10 -70,-22zm146,-72c39,-39 45,-80 17,-126c-57,-97 -203,-53 -203,60c0,50 55,100 110,100c34,0 48,-6 76,-34z" />
+                        <path id="svg_13"
+                            d="m637,1144c-4,-4 -7,-29 -7,-55l0,-48l-52,-3l-53,-3l0,-40l0,-40l52,-3l52,-3l3,-52l3,-52l45,0l45,0l3,53l3,52l50,0l49,0l0,45l0,45l-49,0l-50,0l-3,53l-3,52l-40,3c-23,2 -44,0 -48,-4z" />
+                    </g>
+                    <rect id="svg_16" height="20" width="20" y="-1" x="72" fill="rgba(0,0,0,.1)" />
+                    <rect id="svg_17" height="20" width="20" y="-1" x="112" fill="rgba(0,0,0,.1)" />
+                    <rect id="svg_18" height="20" width="20" y="-1" x="30" fill="#A5F70F" />
+                    <rect id="svg_19" height="20" width="20" y="-1" x="150" fill="rgba(0,0,0,.1)" />
+
+                </svg>
+            </div>
+            <div class="system-info">
+                <div id="digitalClock" onload="showTime()" class="time-container">
+                </div>
+                <div class="wifi-container">
+                    <svg class="icon icon-tabler icon-tabler-wifi" width="32" height="32" viewBox="0 0 24 24"
+                        stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        <path d="M9.172 15.172a4 4 0 0 1 5.656 0"></path>
+                        <path d="M6.343 12.343a8 8 0 0 1 11.314 0"></path>
+                        <path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0"></path>
+                    </svg>
+                </div>
+                <div class="battery-container">
+                    <p>100%</p>
+                    <svg class="icon icon-tabler icon-tabler-battery-4" width="32" height="32" viewBox="0 0 24 24"
+                        stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M6 7h11a2 2 0 0 1 2 2v.5a0.5 .5 0 0 0 .5 .5a0.5 .5 0 0 1 .5 .5v3a0.5 .5 0 0 1 -.5 .5a0.5 .5 0 0 0 -.5 .5v.5a2 2 0 0 1 -2 2h-11a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2">
+                        </path>
+                        <line x1="7" y1="10" x2="7" y2="14"></line>
+                        <line x1="10" y1="10" x2="10" y2="14"></line>
+                        <line x1="13" y1="10" x2="13" y2="14"></line>
+                        <line x1="16" y1="10" x2="16" y2="14"></line>
+                    </svg>
+                </div>
+            </div>
+            <div class="logo">
+                <h1>Nintendo</h1>
+                <h2>Switch</h2>
+            </div>
+            <div class="menu-box">
+                <span class="view-all">
+                    <a href="./GameLibrary.html">
+                        <svg width="64" height="64">
+                            <g>
+                                <rect id="svg_1" height="28" width="28" y="33" x="33" stroke="#fff" fill="#fff" />
+                                <rect id="svg_2" height="28" width="28" y="0" x="0" stroke="#fff" fill="#ffffff" />
+                                <rect id="svg_3" height="28" width="28" y="33" x="0" stroke="#fff" fill="#fff" />
+                                <rect id="svg_4" height="28" width="28" y="0" x="33" stroke="#fff" fill="#fff" />
+                            </g>
+                        </svg>
+                        <h1>View All Software</h1>
+                    </a>
+                </span>
+                <div class="game-icons">
+                    <div class="game-card">
+                        <div class="cover-art-container">
+                            <img class="cover-art" src="/img/CoverArt/metroiddread.webp" draggable="false">
+                        </div>
+                        <div class="game-title">
+                            <h1>Metroid Dread</h1>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="cover-art-container">
+                            <img class="cover-art" src="/img/CoverArt/pokemonlegendsarceus.webp" draggable="false">
+                        </div>
+                        <div class="game-title">
+                            <h1>Pokemon Legends Arceus</h1>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="cover-art-container">
+                            <img class="cover-art" src="/img/CoverArt/kirby.webp" draggable="false">
+                        </div>
+                        <div class="game-title">
+                            <h1>Kirby and the Forgotten Land</h1>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="cover-art-container">
+                            <img class="cover-art" src="/img/CoverArt/smashbros.webp" draggable="false">
+                        </div>
+                        <div class="game-title">
+                            <h1>Super Smash Bros. Ultimate</h1>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="cover-art-container">
+                            <img class="cover-art" src="/img/CoverArt/marioparty.webp" draggable="false">
+                        </div>
+                        <div class="game-title">
+                            <h1>Mario Party Superstars</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="options-box">
+                <div class="option-bubble">
+                    <div class="profile-img-container">
+                        <img class="profile-img" src="/img/CoverArt/linkTP.webp" draggable="false">
+                    </div>
+                    <div class="option-title">
+                        <h1>&nbsp;&nbsp;Kagyu's Page</h1>
+                    </div>
+                </div>
+                <div class="option-bubble">
+                    <div class="news-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-news" width="40"
+                            height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11">
+                            </path>
+                            <line x1="8" y1="8" x2="12" y2="8"></line>
+                            <line x1="8" y1="12" x2="12" y2="12"></line>
+                            <line x1="8" y1="16" x2="12" y2="16"></line>
+                        </svg>
+                    </div>
+                    <div class="option-title">
+                        <h1>&nbsp;&nbsp;&nbsp;News Feed</h1>
+                    </div>
+                </div>
+                <div class="option-bubble">
+                    <div class="store-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-basket" width="40"
+                            height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <polyline points="7 10 12 4 17 10"></polyline>
+                            <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z"></path>
+                            <circle cx="12" cy="15" r="2"></circle>
+                        </svg>
+                    </div>
+                    <div class="option-title">
+                        <h1>Nintendo eShop</h1>
+                    </div>
+                </div>
+                <div class="option-bubble">
+                    <div class="gallery-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-polaroid" width="40"
+                            height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                            <line x1="4" y1="16" x2="20" y2="16"></line>
+                            <path d="M4 12l3 -3c.928 -.893 2.072 -.893 3 0l4 4"></path>
+                            <path d="M13 12l2 -2c.928 -.893 2.072 -.893 3 0l2 2"></path>
+                            <line x1="14" y1="7" x2="14.01" y2="7"></line>
+                        </svg>
+                    </div>
+                    <div class="option-title">
+                        <h1>&nbsp;&nbsp;&nbsp;&nbsp; Album</h1>
+                    </div>
+                </div>
+                <div class="option-bubble">
+                    <div class="option-container">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="52" height="52"
+                            viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+                            <g transform="translate(-190,320) scale(0.140000,-0.140000) rotate(-40 50 500)" fill="#fff"
+                                stroke="currentColor" stroke-width="1.5">
+                                <path d="M1859 4162 c-23 -20 -24 -25 -27 -173 -3 -147 -4 -153 -28 -171 l-24
+                       -19 0 -270 0 -270 25 -23 25 -23 0 -618 0 -618 -25 -23 -25 -23 0 -270 0 -270
+                       25 -19 25 -20 0 -277 0 -277 428 5 c477 4 479 4 627 78 138 67 248 177 321
+                       319 83 160 79 88 79 1295 0 1191 4 1117 -69 1270 -88 185 -242 317 -451 386
+                       -68 23 -83 23 -476 27 -391 3 -406 3 -430 -16z m844 -158 c115 -29 221 -98
+                       300 -194 47 -56 102 -168 116 -238 8 -36 11 -375 11 -1085 0 -892 -2 -1041
+                       -15 -1092 -47 -183 -182 -334 -361 -403 l-69 -26 -347 -4 -348 -3 0 1530 0
+                       1531 326 0 c264 0 338 -3 387 -16z" />
+                                <path d="M2490 3818 c-48 -25 -90 -89 -90 -138 0 -14 10 -46 23 -70 24 -48 88
+                       -90 137 -90 14 0 46 10 70 23 48 24 90 88 90 137 0 49 -42 113 -90 138 -24 12
+                       -56 22 -70 22 -14 0 -46 -10 -70 -22z" />
+                                <path d="M2170 3498 c-48 -25 -90 -89 -90 -138 0 -14 10 -46 23 -70 24 -48 88
+                       -90 137 -90 49 0 113 42 138 90 12 24 22 56 22 70 0 14 -10 46 -22 70 -25 48
+                       -89 90 -138 90 -14 0 -46 -10 -70 -22z" />
+                                <path d="M2810 3498 c-48 -25 -90 -89 -90 -138 0 -14 10 -46 23 -70 24 -48 88
+                       -90 137 -90 49 0 113 42 138 90 12 24 22 56 22 70 0 49 -42 113 -90 138 -24
+                       12 -56 22 -70 22 -14 0 -46 -10 -70 -22z" />
+                                <path d="M2490 3178 c-48 -25 -90 -89 -90 -138 0 -14 10 -46 23 -70 24 -48 88
+                       -90 137 -90 14 0 46 10 70 23 48 24 90 88 90 137 0 49 -42 113 -90 138 -24 12
+                       -56 22 -70 22 -14 0 -46 -10 -70 -22z" />
+                                <path d="M2460 2384 c-153 -41 -262 -161 -292 -322 -48 -257 197 -502 454
+                       -454 219 41 369 246 330 452 -30 166 -138 284 -297 325 -72 18 -123 18 -195
+                       -1z m226 -180 c132 -81 153 -263 43 -373 -53 -53 -112 -75 -188 -69 -240 17
+                       -305 343 -89 452 74 38 163 34 234 -10z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="option-title">
+                        <h1>&nbsp;&nbsp;&nbsp;Controllers</h1>
+                    </div>
+                </div>
+                <div class="option-bubble">
+                    <div class="option-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="40"
+                            height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
+                            </path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div class="option-title">
+                        <h1>System Settings</h1>
+                    </div>
+                </div>
+                <div class="option-bubble">
+                    <div class="option-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-power" width="40"
+                            height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M7 6a7.75 7.75 0 1 0 10 0"></path>
+                            <line x1="12" y1="4" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <div class="option-title">
+                        <h1>&nbsp;&nbsp;&nbsp;Sleep Mode</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="controls-container">
+                <p class="control-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="20"
+                        height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </p>
+                <p class="controls-text">Options</p>
+                &nbsp;
+                <p class="control-button">A</p>
+                <p class="controls-text">Start</p>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <div class="close" onclick="Close()"><i class="fa-solid fa-x"></i></div>
+                <div class="sleepMode">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-power" width="40"
+                            height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M7 6a7.75 7.75 0 1 0 10 0"></path>
+                            <line x1="12" y1="4" x2="12" y2="12"></line>
+                        </svg></div>Sleep Mode
+                </div>
+                <div class="auto-bright">Auto-brightness<div onclick="Switch()" id="toggle" class="sidenav-toggle">Off
+                    </div>
+                </div>
+                <div class="volume">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume" width="40"
+                        height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M15 8a5 5 0 0 1 0 8"></path>
+                        <path d="M17.7 5a9 9 0 0 1 0 14"></path>
+                        <path
+                            d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a0.8 .8 0 0 1 1.5 .5v14a0.8 .8 0 0 1 -1.5 .5l-3.5 -4.5">
+                        </path>
+                    </svg>
+                    <input class="slider" type="range" id="brightness-range" min="10" max="100" value="100">
+                </div>
+                <div class="brightness">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-up"
+                        width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <line x1="12" y1="5" x2="12" y2="3"></line>
+                        <line x1="17" y1="7" x2="18.4" y2="5.6"></line>
+                        <line x1="19" y1="12" x2="21" y2="12"></line>
+                        <line x1="17" y1="17" x2="18.4" y2="18.4"></line>
+                        <line x1="12" y1="19" x2="12" y2="21"></line>
+                        <line x1="7" y1="17" x2="5.6" y2="18.4"></line>
+                        <line x1="6" y1="12" x2="4" y2="12"></line>
+                        <line x1="7" y1="7" x2="5.6" y2="5.6"></line>
+                    </svg>
+                    <input class="slider" type="range" id="brightness-range" min="10" max="100" value="100">
+                </div>
+                <div class="airplane-mode">Airplane Mode<div onclick="Switch2()" id="toggle2" class="sidenav-toggle">Off
+                    </div>
+                </div>
+                <div class="airplane-text">
+                    <p>If you turn Airplane Mode on, you will no longer be able to use wireless controllers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

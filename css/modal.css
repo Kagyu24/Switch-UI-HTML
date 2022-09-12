@@ -1,0 +1,251 @@
+.modal-bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: rgba(15, 15, 15, 0.75);
+  z-index: 3;
+  width: 75%;
+  height: 95%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 1.5em;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 25px;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.close:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+.slideshow {
+  width: 100%;
+  height: 55%;
+  position: relative;
+  margin: 1rem;
+}
+
+.slides {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first,
+.slide {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  display: none;
+}
+
+.first {
+  display: block;
+}
+
+.slide {
+  width: 60%;
+  height: auto;
+  margin: 5px 0px;
+}
+
+.slide img {
+  width: 100%;
+  margin: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.arrows {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 12px;
+  color: white;
+  border-radius: 5px;
+  font-size: 25px;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.prev {
+  left: 20%;
+  border-radius: 3px;
+}
+
+.next {
+  right: 20%;
+  border-radius: 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 45%;
+  bottom: 0%;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.game-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 40%;
+  height: 75%;
+  border-right: 1px solid white;
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.rating,
+.release,
+.player-nmb,
+.game-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85em;
+  flex-direction: row;
+  gap: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.description {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 1rem;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description p {
+  font-weight: 100;
+  margin: 5px 5px;
+  padding: 5px;
+}
+
+.store-btn,
+.store-btn:hover {
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  display: block;
+  border: 1px solid rgb(210, 0, 18);
+  background-color: rgb(210, 0, 18);
+  width: 15rem;
+  height: 3rem;
+  padding: 0;
+  margin: 15px;
+  border-radius: 0.25rem;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+}
